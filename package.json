@@ -21,6 +21,17 @@
   },
   "homepage": "https://github.com/marvin52/felipe-pires#readme",
   "devDependencies": {
-    "grunt": "^1.0.1"
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.0.0",
+    "grunt-contrib-concat": "~1.0.1",
+    "grunt-contrib-cssmin": "~1.0.1",
+    "grunt-contrib-jade": "^1.0.0",
+    "grunt-contrib-uglify": "~1.0.1",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-sass": "~1.2.0",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "dependencies": {
+    "jade": "^1.11.0"
   }
 }
