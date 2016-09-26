@@ -6,20 +6,10 @@ module.exports = function(grunt) {
     browserify: {
       dist: {
         files: {
-          'dist/js/main.js': ['src/js/main.js']
+          'dist/js/main.js': 'src/js/main.js'
         }
       }
     },
-  uglify: {
-    options: {
-      beautify: true
-    },
-    my_target: {
-      files: {
-        'dist/js/main.min.js': ['dist/js/main.js']
-      }
-    }
-  },
   sass: {
     options: {
       sourceMap: true
@@ -37,9 +27,13 @@ module.exports = function(grunt) {
           debug: false
         }
       },
-      files: {
-        "dist/html/app.html": ["src/jade/app.jade"]
-      }
+      files: [ {
+              cwd: "source/jade",
+              src: "**/*.jade",
+              dest: "dist/html",
+              expand: true,
+              ext: ".html"
+            } ]
     }
   },
   watch: {
@@ -68,6 +62,6 @@ module.exports = function(grunt) {
 
 
 
-  grunt.registerTask('build', ['browserify', 'uglify', 'sass', 'cssmin', 'jade']);
+  grunt.registerTask('build', ['browserify', 'sass', 'cssmin', 'jade']);
 
 };
