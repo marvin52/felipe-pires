@@ -34,4 +34,6 @@ var youtubeApi = {
   }
 }
 
-module.exports = youtubeApi;
+$(function(){
+  youtubeApi.init();
+})
