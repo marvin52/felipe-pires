@@ -27,13 +27,9 @@ module.exports = function(grunt) {
           debug: false
         }
       },
-      files: [ {
-              cwd: "source/jade",
-              src: "**/*.jade",
-              dest: "dist/html",
-              expand: true,
-              ext: ".html"
-            } ]
+      files: {
+      "index.html": ["source/jade/app.jade"]
+      }
     }
   },
   watch: {
