@@ -1,9 +1,9 @@
 var cacheName = 'weatherPWA-step-5-1';
 var filesToCache = [
-'/dist/img/topo.png',
-'/dist/css/material.min.css',
-'/dist/fonts/mdl.woff',
-'/dist/js/material.min.js'
+'dist/img/topo.png',
+'dist/css/material.min.css',
+'dist/fonts/mdl.woff',
+'dist/js/material.min.js'
 ];
 
 self.addEventListener('install', function(e) {
