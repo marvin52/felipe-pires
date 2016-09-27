@@ -51,4 +51,11 @@
   .loader.off {
     display: none; }
 
+.page-content.video-list:before {
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 200px;
+  background: url(../img/topo.png) center/cover; }
+
 /*# sourceMappingURL=style.css.map */
