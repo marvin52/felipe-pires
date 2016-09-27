@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="dist/css/style.min.css">
+    <link rel="manifest" href="manifest.json">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Felipe Pires</title>
     <meta name="description" content="Sou gaúcho, natural de Santa Rosa, me criei em Farroupilha (Burati) gosto de divertir e alegrar as pessoas através dos vídeos que produzo. Amém!">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Felipe Pires</title>
+    <link rel="stylesheet" href="dist/css/style.min.css">
     <link rel="stylesheet" href="dist/css/material.min.css">
     <link rel="stylesheet" href="dist/css/style.min.css">
     <script src="dist/js/material.min.js"></script>
     <script src="dist/js/handlebars.js"></script>
     <script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/fileDownload.js"></script>
     <script src="dist/js/main.js"></script>
   </head>
   <body>
     <!-- Always shows a header, even in smaller screens.-->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
+      <header class="mdl-layout__header flp-header">
         <div class="mdl-layout__header-row">
           <!-- Title--><span class="mdl-layout-title">Felipe Pires</span>
           <!-- Add spacer, to align navigation to the right-->
@@ -34,6 +36,9 @@
           <!-- Your content goes here-->
         </div>
       </main>
+    </div>
+    <div class="loader">
+      <div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
     </div>
     <script id="card-video-template" type="text/x-handlebars-template">
       {{#each items}}

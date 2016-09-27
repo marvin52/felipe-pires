@@ -2,20 +2,16 @@
 
 var youtubeApi = {
 
-
   init: function(){
     this.setBinds();
     this.updateVideos();
   },
 
-
-
   setBinds: function(){
     $(document).on('click','.download-video-youtube',function(e){
-      console.log(e, 'click')
+
     })
   },
-
 
 
   updateVideos: function(){
