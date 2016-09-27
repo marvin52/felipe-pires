@@ -19,10 +19,9 @@ var youtubeApi = {
       var teste = e.target.attributes['href'].value;
       $.fileDownload(teste, {
         prepareCallback: function(){
-          console.log('prepareCallback')
         },
         successCallback: function(){
-          console.log('successCallback')
+          alert('successCallback')
         }
       });
       return false;
