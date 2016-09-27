@@ -1,2 +1,54 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(../fonts/mdl.woff) format("woff"); }
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased; }
+
+.youtube-card.mdl-card {
+  width: 288px;
+  height: 215px;
+  margin: 10px auto; }
+
+.youtube-card > .mdl-card__title {
+  color: #fff;
+  padding: 0px;
+  background: #000;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.youtube-card .mdl-button {
+  margin-bottom: 10px; }
+
+.youtube-card .mdl-card__actions {
+  height: 53px; }
+
+.vide-name {
+  display: none !important; }
+
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+  .loader > div {
+    width: 100px;
+    height: 100px; }
+  .loader.off {
+    display: none; }
 
 /*# sourceMappingURL=style.css.map */
