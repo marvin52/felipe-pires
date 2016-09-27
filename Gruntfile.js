@@ -24,8 +24,9 @@ module.exports = function(grunt) {
     compile: {
       options: {
         data: {
-          debug: false
-        }
+          debug: true
+        },
+        pretty: true
       },
       files: {
       "index.html": ["source/jade/app.jade"]
@@ -34,7 +35,7 @@ module.exports = function(grunt) {
   },
   watch: {
     scripts: {
-      files: ['src/js/**/*.js', 'src/sass/**/*.sass', 'src/jade/**/*.jade'],
+      files: ['source/js/**/*.js', 'source/sass/**/*.sass', 'source/jade/**/*.jade'],
       tasks: ['build'],
       options: {
         interrupt: true,
