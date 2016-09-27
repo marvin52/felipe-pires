@@ -6,7 +6,7 @@ module.exports = function(grunt) {
     browserify: {
       dist: {
         files: {
-          'dist/js/main.js': 'src/js/main.js'
+          'dist/js/main.js': 'source/js/main.js'
         }
       }
     },
@@ -16,7 +16,7 @@ module.exports = function(grunt) {
     },
     dist: {
       files: {
-        'dist/css/style.css': 'src/sass/style.sass'
+        'dist/css/style.css': 'source/sass/style.sass'
       }
     }
   },
