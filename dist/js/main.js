@@ -7,6 +7,7 @@ var youtubeApi = {
     var template = Handlebars.compile(source);
 
     this.setBinds();
+    this.updateVideos();
   },
   setBinds: function(){
     $(document).on('click','.download-video-youtube',function(e){
