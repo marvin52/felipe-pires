@@ -22,7 +22,8 @@
 .youtube-card.mdl-card {
   width: 288px;
   height: 215px;
-  margin: 10px auto; }
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 .youtube-card > .mdl-card__title {
   color: #fff;
@@ -84,5 +85,11 @@
 
 .modal.modal--hidden {
   display: none; }
+
+.video-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start; }
 
 /*# sourceMappingURL=style.css.map */
