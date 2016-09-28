@@ -7,7 +7,7 @@ var youtubeApi = {
     this.updateVideos();
     if('serviceWorker' in navigator) {
       navigator.serviceWorker
-               .register('dist/js/service-worker.js')
+               .register('/felipe-pires/dist/js/service-worker.js')
                .then(function() { console.log('Service Worker Registered'); });
     }
   },
