@@ -52,7 +52,11 @@ var youtubeApi = {
         var token = (typeof data.nextPageToken != 'undefined')? data.nextPageToken : ''; 
         $('meta[name="next-page-token"]').attr('content', token)
         $('.loader').addClass('off')
-        $('.video-list').append(template(data));
+        var items = data.items.map(function(i){
+          if(i.id.kind == 'youtube#video')
+            return i;
+        })
+        $('.video-list').append(template({items: items}));
         if(callback) callback(data);
       }
     });
