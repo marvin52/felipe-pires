@@ -15,8 +15,12 @@ var youtubeApi = {
 
   setBinds: function(){
     $(document).on('click','.download-video-youtube',function(e){
-
+      $('.modal').removeClass('modal--hidden').addClass('modal--visible');
+    });
+    $(document).on('click', '.modal__lock-screen, .modal .mdl-button', function(){
+      $('.modal').removeClass('modal--visible').addClass('modal--hidden');
     })
+
   },
 
 

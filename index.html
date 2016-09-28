@@ -43,6 +43,16 @@
     <div class="loader">
       <div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
     </div>
+    <div class="modal modal--hidden">
+      <div class="modal__lock-screen"></div>
+      <div class="modal__box mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title">
+          <h2 class="mdl-card__title-text">Muito obrigado por compartilhar!</h2>
+        </div>
+        <div class="mdl-card__supporting-text">Enquanto o video baixa, por que você não aproveita e se inscreve no meu canal?</div>
+        <div class="mdl-card__actions mdl-card--border"><a onclick="window.open('https://www.youtube.com/channel/UCLJ9MNjT7Xzqa7XRiU8IEBg?sub_confirmation=1')" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Me inscrever!</a></div>
+      </div>
+    </div>
     <script id="card-video-template" type="text/x-handlebars-template">
       {{#each items}}
       <div class="youtube-card mdl-card mdl-shadow--2dp" id="video-{{id.videoId}}">
